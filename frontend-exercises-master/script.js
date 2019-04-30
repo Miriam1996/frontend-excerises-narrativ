@@ -71,7 +71,7 @@ function Smartlink(ID, element){
  			item.runAuction().then((result) => {
  				//console.log(result.data);
  				var URL = result.data.destination_url;
- 				var linkText = `${result.data.product_name } $${ result.data.price } at ${result.data.merchant_name }`;
+ 				var linkText = `${result.data.product_name }, $${ result.data.price } at ${result.data.merchant_name }`;
  				
  				//pass data to update links
  				item.rewriteLink(URL,linkText);
